@@ -1,0 +1,36 @@
+/*body css*/
+body{
+  background-color: #f9f8f6;
+  font-family: Georgia, Times, serif;
+  background-position: center;
+  line-height: 1.4em;
+  margin: 0px;
+}
+
+h2{
+  text-align: center;
+  color: #555;
+  font-size: 20px;
+  padding: 1em;
+  margin: 10em auto;
+  width: 15em;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px rgba(0,0,0,0.8);
+}
+.content{
+  background-image: url("../images/darkwood.jpg");
+  clear: both;
+  overflow: auto;
+  width: 100%;
+
+}
+
+/*FOOTER*/
+div.footer{
+  padding: 10px;
+    text-align: center;
+    clear: both;
+    color: #ffffff;
+    background-color: #aeaca8;
+}

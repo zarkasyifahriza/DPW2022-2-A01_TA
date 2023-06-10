@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<!-- basic -->
+		<meta charset="utf-8">
+		<title>Pemesanan Kamar</title>
+		<!--  Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="css/form.css">
+	</head>
+	<!-- body -->
+	<body>
+		<!-- wrapper  -->
+		<div class="wrapper">
+			 <!-- header -->
+			<div class="header">
+				<a><img src="images/bi.png" alt="patternbatik"></a>
+				<h1>Hotel Arah Langkah</h1>
+			<!-- end header -->	
+			</div>
+			<!-- menu -->
+			<div class="menu">
+				<ul>
+					<!-- dropdown -->
+					<li><a href="index.html">Home Page</a>
+						<ul class="home">
+							<li><a href="TipeKamar.html">Tipe Kamar</a></li>
+						</ul>
+						<!-- end dropdown -->
+					</li>
+					<li class="active"><a href="Reservasi.html">Reservasi</a></li>
+					<li><a href="Evaluation.html">Evaluation</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+				</ul>
+			<!-- end menu -->	
+			</div>
+			<!-- content -->
+			<div class="content">
+				<!-- grup-content -->
+				<div id="grup-content">
+					<h2>Formulir Reservasi</h2>
+					<!-- login -->
+					<div class="login">
+						<!-- form -->
+						<form name="myForm" action="success.html" method="post" onsubmit="return validate()">
+							<!-- NIK -->
+							<div class="form-grup">
+								<label>NIK</label><br>
+								<input id="nik" name="nik" maxlength="30"><br>
+								<div id="nikError"></div>
+							</div>
+							<!-- NAMA LENGKAP -->
+							<div class="form-grup">
+								<label>Nama Lengkap</label><br>
+								<input id="nama" name="nama" type="text"><br>
+								<div id="namaError"></div>
+							</div>
+							<!-- TEMPAT LAHIR -->
+							<div class="form-grup">
+								<label>Tempat Lahir</label><br>
+								<input id="tempatLahir" name="tempatLahir" type="text"><br>
+								<div id="tempatLahirError"></div>
+							</div>
+							<!-- TANGGAL LAHIR -->
+							<div class="form-grup">
+								<label>Tanggal Lahir</label><br>
+								<input id="tanggalLahir" name="tanggalLahir" type="date"><br>
+								<div id="tanggalLahirError"></div>
+							</div>
+							<!-- JENIS KELAMIN -->
+							<div class="form-grup">
+								<label>Jenis Kelamin</label><br>
+								<input type="radio" id="lk" name="gender" value="lk">
+								<label>Laki-laki </label><br>
+								<input type="radio" id="pr" name="gender" value="pr">
+								<label>Perempuan</label><br>
+								<div id="genderError"></div>
+							 </div>
+							<!-- ALAMAT -->
+							<div class="form-grup">
+								<label>Alamat</label><br>
+								<textarea id="alamat" name="alamat"></textarea><br>
+								<div id="alamatError"></div>
+							</div>	
+							<!-- EMAIL -->
+							<div class="form-grup">
+								<label>Email</label><br>
+								<input id="email" name="email" placeholder="example@gmail.com" pattern="[^\s@]+@[^\s@]+\.[^\s@]+"><br>
+								<div id="emailError"></div>
+							</div>
+							<!-- PENDIDIKAN TERAKHIR -->
+							<div class="form-grup">
+								<label>Tipe Kamar</label><br>
+								<select id="tipekamar">
+									<option value="1">--Silahkan pilih tipe kamar--</option>
+									<option value="Standard room">Standard room</option>
+									<option value="Superior room">Superior room</option>
+									<option value="Deluxe room">Deluxe room</option>
+									<option value="Presidential Suite Room">Presidential Suite Room</option>
+								</select><br>
+								<div id="tipekamarError"></div>
+							</div>
+							<!--Jenis Pemesanan-->
+							<div class="form-grup">
+								<label>Pemesanan</label><br>
+								<input type="checkbox" id="pemesanan1" name="Pemesanan" value="tulis">
+								<label>Untuk diri sendiri</label><br>
+								<input type="checkbox" id="pemesanan2" name="Pemesanan" value="cap">
+								<label>Untuk orang lain</label><br>
+							</div>
+							<!--UPLOAD FOTO-->
+							<div class="form-grup">
+									<label for="file-upload">Foto Anda</label><br>
+									<input id="file-upload" type="file" name="foto"><br>
+									<div id="file-uploadError"></div>
+							</div>
+							<!-- SUBMIT -->
+							<div class="form-grup">
+								<input type="submit" id="submit" value="Kirim">
+							</div>
+						</form>
+					<!-- end login -->
+					</div>
+				<!-- end grup-content -->
+				</div>
+			<!-- end content -->
+			</div>
+
+			<!-- sidebar -->
+			<div class="sidebar">
+				<!-- sidebox -->
+				<div class="sidebox"><h3>Rekomendasi Hotel Di Trawas</h3>
+					<ul>
+						<li><a href="https://www.agoda.com/grand-whiz-hotel-trawas/hotel/trawas-id.html?cid=1844104">Hotel Grand Whiz</a></li>
+						<li><a href="https://www.agoda.com/vanda-gardenia-hotel-resort/hotel/trawas-id.html?cid=1844104">Vanda Gardenia Hotel</a></li>
+						<li><a href="https://www.agoda.com/inna-tretes-hotel/hotel/trawas-id.html">Inna Tretes Hotel</a></li>
+						<li><a href="https://www.agoda.com/royal-senyiur-hotel/hotel/trawas-id.html">Royal Senyiur Hotel</a></li>
+						<li><a href="https://www.agoda.com/kaliandra-sejati-eco-resort/hotel/trawas-id.html">Kaliandra Sejati Eco Resort</a></li>
+						<li><a href="https://www.agoda.com/baobab-safari-resort/hotel/trawas-id.html">Baobab Safari Resort</a></li>
+					</ul>
+				</div>
+				<!--end sidebox-->
+			</div>
+			<!--end sidebar-->
+
+			<!--maps-->
+			<div class="sidebarmaps">
+				<div class="sidebox"><h3>Lokasi Hotel arah langkah</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.9115411650587!2d112.62318225339635!3d-7.701534965873888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7d7dd85cff7ff%3A0xaf873e790640552f!2sAir%20Terjun%20Kakek%20Bodo!5e0!3m2!1sid!2sid!4v1685368911725!5m2!1sid!2sid">
+					</iframe>
+				</div>
+			</div>
+			<!--end maps-->
+
+			<!--footer-->
+			<div class="footer">
+				<h3>Contact</h3>
+				<p>Jl. Pahlawan 142, Kemiloko, Trawas, Kec. Trawas, Kabupaten Mojokerto, Jawa Timur 61375</p>
+				<p>Telp: (62-21) 29127788 Fax: (62-21) 29126677</p>
+				<p>www.arahlangkah-hotel.com</p>
+				<p>Email: info@arahlangkah-hotel.com</p>
+			</div>
+		<!-- Javascript files-->
+		<script src="js/form.js"></script>
+		<!-- end wrapper -->
+		</div>
+	</body>
+</html>
